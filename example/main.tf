@@ -1,8 +1,6 @@
 module "azurerm_redis_cache" {
-  # source  = "blackbird-cloud/redis-cache/azurerm"
-  # version = "~> 1"
-
-  source = "../../terraform-azurerm-redis-cache"
+  source  = "blackbird-cloud/redis-cache/azurerm"
+  version = "~> 1"
 
   resource_group_name     = "shared-tools"
   resource_group_location = "westeurope"
